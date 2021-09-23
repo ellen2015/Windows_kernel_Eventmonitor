@@ -18,6 +18,7 @@ NTSTATUS devctrl_ioInit(PDRIVER_OBJECT DriverObject);
 VOID devctrl_free();
 VOID devctrl_clean();
 void devctrl_ioThreadFree();
+VOID devctrl_setShutdown();
 
 void devctrl_pushprocessinfo(int code);
 void devctrl_pushthreadinfo(int code);

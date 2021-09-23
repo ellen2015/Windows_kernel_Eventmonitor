@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\event-sdk\bin\Debug\x64\driver.sys</FullPath>
+      <FullPath>D:\windows_kernel_Eventmonitor\bin\Debug\x64\driver.sys</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

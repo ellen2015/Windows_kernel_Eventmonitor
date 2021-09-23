@@ -203,7 +203,6 @@ BOOLEAN QueryProcessNamePath(__in DWORD pid, __out PWCHAR path, __in DWORD pathl
     return bRet;
 }
 
-
 void Process_Clean(void)
 {
     KLOCK_QUEUE_HANDLE lh;
@@ -214,6 +213,7 @@ void Process_Clean(void)
 
     while (!IsListEmpty(&g_processQueryhead.process_pending))
     {
+        // BUG¹Ø»úÀ¶ÆÁ
         pData = RemoveEntryList(&g_processQueryhead.process_pending);
         sl_unlock(&lh);
         Process_PacketFree(pData);

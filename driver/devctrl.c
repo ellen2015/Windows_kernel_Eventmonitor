@@ -380,6 +380,9 @@ VOID devctrl_clean()
 
 VOID devctrl_free()
 {
+	// ÉèÖÃ¹Ø»ú
+	devctrl_setShutdown();
+
 	devctrl_clean();
 
 	Process_Free();
