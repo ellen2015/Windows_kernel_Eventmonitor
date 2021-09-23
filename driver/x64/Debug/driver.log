@@ -1,0 +1,55 @@
+﻿  Building 'driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\driver.inf
+  Stamping [Version] section with DriverVer=09/23/2021,19.52.37.463
+D:\event-sdk\driver\driver.inf : warning 1420: [DefaultInstall]-based INF cannot be processed as Primitive.
+D:\event-sdk\driver\driver.inf(5-5): warning 1324: [Version] section should specify PnpLockdown=1.
+D:\event-sdk\driver\driver.inf(24-24): warning 1421: Section [DefaultInstall] should have an architecture decoration.
+D:\event-sdk\driver\driver.inf(35-35): warning 1421: Section [DefaultUninstall] should have an architecture decoration.
+D:\event-sdk\driver\driver.inf(73-73): warning 1205: Section [MiniFilter.driverFiles] referenced from DelFiles and CopyFiles directive.
+  devctrl.c
+D:\event-sdk\driver\devctrl.c(366,42): warning C4133: “=”: 从“PLIST_ENTRY”到“PNF_QUEUE_ENTRY”的类型不兼容
+D:\event-sdk\driver\devctrl.c(559,31): warning C4047: “函数”:“PRKEVENT”与“PVOID *”的间接级别不同
+D:\event-sdk\driver\devctrl.c(559,14): warning C4024: “KeSetEvent”: 形参和实参 1 的类型不同
+D:\event-sdk\driver\devctrl.c(574,23): warning C4098: “devctrl_ioThreadFree”:“void”函数返回值
+D:\event-sdk\driver\devctrl.c(820,15): warning C4098: “devctrl_pushprocessinfo”:“void”函数返回值
+  imagemod.c
+  otherevent.c
+  process.c
+D:\event-sdk\driver\process.c(8,40): warning C4047: “初始化”:“KSPIN_LOCK”与“void *”的间接级别不同
+D:\event-sdk\driver\process.c(10,53): warning C4047: “初始化”:“KSPIN_LOCK”与“void *”的间接级别不同
+D:\event-sdk\driver\process.c(83,5): warning C4133: “函数”: 从“KSPIN_LOCK_QUEUE *”到“PKLOCK_QUEUE_HANDLE”的类型不兼容
+D:\event-sdk\driver\process.c(85,5): warning C4133: “函数”: 从“KSPIN_LOCK_QUEUE *”到“PKLOCK_QUEUE_HANDLE”的类型不兼容
+D:\event-sdk\driver\process.c(131,46): warning C4311: “类型强制转换”: 从“HANDLE”到“DWORD”的指针截断
+D:\event-sdk\driver\process.c(142,42): warning C4047: “=”:“int”与“HANDLE”的间接级别不同
+D:\event-sdk\driver\process.c(152,56): warning C4047: “=”:“int”与“HANDLE”的间接级别不同
+D:\event-sdk\driver\process.c(217,69): warning C4047: “=”:“PROCESSBUFFER *”与“BOOLEAN”的间接级别不同
+  register.c
+  thread.c
+  driver.c
+D:\event-sdk\driver\driver.c(75,26): warning C4098: “driverUnload”:“void”函数返回值
+D:\event-sdk\driver\driver.c(111,102): warning C4133: “=”: 从“char *”到“unsigned short *”的类型不兼容
+D:\event-sdk\driver\driver.c(113,13): warning C4033: “DriverEntry”必须返回值
+  正在生成代码...
+D:\event-sdk\driver\driver.c(129): warning C4715: “DriverEntry”: 不是所有的控件路径都返回值
+D:\event-sdk\driver\driver.c(135): warning C4716: “driver_free”: 必须返回一个值
+D:\event-sdk\driver\devctrl.c(646): warning C4716: “devctrl_popthreadinfo”: 必须返回一个值
+D:\event-sdk\driver\devctrl.c(641): warning C4715: “devctrl_popprocessinfo”: 不是所有的控件路径都返回值
+D:\event-sdk\driver\devctrl.c(651): warning C4716: “devctrl_popimagemodinfo”: 必须返回一个值
+  driver.vcxproj -> D:\event-sdk\bin\Debug\x64\driver.sys
+  Done Adding Additional Store
+  Successfully signed: D:\event-sdk\bin\Debug\x64\driver.sys
+  
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  D:\event-sdk\bin\Debug\x64\driver\driver.cat
+  Done Adding Additional Store
+  Successfully signed: ..\bin\Debug\x64\driver\driver.cat
+  
